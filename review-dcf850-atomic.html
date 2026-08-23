@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+  <html lang="pt-BR">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DEWALT DCF850 ATOMIC — Review técnico | PickVoltex</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#16181b;
+    --bg-panel:#1e2126;
+    --bg-panel-2:#25292f;
+    --ink:#f1ede4;
+          --ink-dim:#98a0a6;
+    --accent:#f2a922;
+          --accent-2:#e8542f;
+          --line:#33383e;
+    --good:#4f9d6e;
+    --bad:#d16565;
+      }
+        *{box-sizing:border-box; margin:0; padding:0;}
+  body{
+        background:var(--bg);
+    color:var(--ink);
+    font-family:'Inter',system-ui,sans-serif;
+    line-height:1.6;
+    font-size:16px;
+}
+  a{color:var(--accent);}
+  .wrap{max-width:760px; margin:0 auto; padding:0 24px;}
+
+  header{border-bottom:3px solid var(--accent); background:var(--bg-panel);}
+  .header-inner{max-width:760px; margin:0 auto; padding:18px 24px; display:flex; align-items:center; justify-content:space-between;}
+  .logo{font-family:'Barlow Condensed', sans-serif; font-weight:800; font-size:24px; text-transform:uppercase;}
+  .logo span{color:var(--accent);}
+  .back-link{font-family:'JetBrains Mono', monospace; font-size:12px; color:var(--ink-dim); text-decoration:none;}
+
+  .article-header{padding:48px 0 28px; border-bottom:1px solid var(--line);}
+  .kicker{font-family:'JetBrains Mono', monospace; font-size:12px; color:var(--accent); text-transform:uppercase; letter-spacing:1.5px; margin-bottom:16px;}
+  h1{font-family:'Barlow Condensed', sans-serif; font-weight:800; font-size:40px; line-height:1.08; text-transform:uppercase;}
+  .subtitle{margin-top:14px; color:var(--ink-dim); font-size:17px; max-width:620px;}
+
+  .verdict-plate{
+        margin:32px 0 40px;
+    background:var(--bg-panel);
+    border:1px solid var(--line);
+    border-top:4px solid var(--good);
+    padding:22px 24px;
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+  .verdict-score{
+        font-family:'JetBrains Mono', monospace;
+    font-weight:700;
+    font-size:30px;
+    color:var(--good);
+    flex:none;
+}
+  .verdict-text{font-size:14.5px; color:var(--ink-dim);}
+  .verdict-text strong{color:var(--ink); font-weight:600;}
+
+  h2{
+        font-family:'Barlow Condensed', sans-serif;
+    font-weight:700;
+    font-size:26px;
+    text-transform:uppercase;
+    letter-spacing:0.3px;
+    margin-top:44px;
+    margin-bottom:14px;
+    padding-top:24px;
+    border-top:1px solid var(--line);
+}
+  p{margin-bottom:16px; color:#dcd8cf;}
+    p.lead{font-size:17px; color:var(--ink);}
+  ul, ol{margin:0 0 16px 20px; color:#dcd8cf;}
+    li{margin-bottom:8px;}
+        strong{color:var(--ink); font-weight:600;}
+
+  .spec-table{
+        width:100%;
+    border-collapse:collapse;
+    margin:20px 0 28px;
+    font-family:'JetBrains Mono', monospace;
+    font-size:13.5px;
+    border:1px solid var(--line);
+}
+  .spec-table tr{border-bottom:1px solid var(--line);}
+  .spec-table tr:last-child{border-bottom:none;}
+      .spec-table td{padding:12px 16px;}
+      .spec-table td:first-child{color:var(--ink-dim); width:44%; text-transform:uppercase; letter-spacing:0.5px; font-size:11.5px;}
+  .spec-table td:last-child{color:var(--ink); font-weight:600;}
+  .spec-table tr:nth-child(odd){background:var(--bg-panel);}
+
+  .torque-bar-wrap{margin:24px 0 32px;}
+  .torque-row{display:grid; grid-template-columns:150px 1fr 70px; align-items:center; gap:12px; margin-bottom:10px; font-family:'JetBrains Mono', monospace; font-size:12.5px;}
+  .torque-row .model{color:var(--ink-dim);}
+  .torque-track{background:var(--bg-panel); height:14px; border:1px solid var(--line);}
+  .torque-fill{background:var(--accent); height:100%;}
+  .torque-row.highlight .model{color:var(--accent); font-weight:700;}
+  .torque-row.highlight .torque-fill{background:var(--accent-2);}
+  .torque-row .val{color:var(--ink-dim); text-align:right;}
+
+  .pros-cons{display:grid; grid-template-columns:1fr 1fr; gap:16px; margin:20px 0 28px;}
+  .pc-box{background:var(--bg-panel); border:1px solid var(--line); padding:18px 20px;}
+  .pc-box h3{font-family:'JetBrains Mono', monospace; font-size:12px; text-transform:uppercase; letter-spacing:1px; margin-bottom:12px;}
+  .pc-box.pros h3{color:var(--good);}
+  .pc-box.cons h3{color:var(--bad);}
+  .pc-box ul{margin:0; padding-left:16px; font-size:14px;}
+  .pc-box li{margin-bottom:8px; color:#dcd8cf;}
+
+    .cta-box{
+          margin:36px 0;
+    background:var(--bg-panel);
+    border:1px solid var(--line);
+    border-left:4px solid var(--accent);
+    padding:24px;
+}
+  .cta-box h3{font-family:'Barlow Condensed', sans-serif; font-size:20px; text-transform:uppercase; margin-bottom:10px;}
+  .cta-box p{font-size:14px; color:var(--ink-dim); margin-bottom:16px;}
+  .cta-btn{
+        display:inline-block;
+    background:var(--accent);
+    color:var(--bg);
+    font-family:'JetBrains Mono', monospace;
+    font-weight:700;
+    font-size:13px;
+    text-transform:uppercase;
+    letter-spacing:0.5px;
+    padding:12px 20px;
+    text-decoration:none;
+    margin-right:10px;
+    margin-bottom:10px;
+}
+  .cta-btn.secondary{background:transparent; border:1px solid var(--accent); color:var(--accent);}
+
+  .disclosure{
+        margin-top:48px;
+    padding-top:20px;
+    border-top:1px solid var(--line);
+    font-family:'JetBrains Mono', monospace;
+    font-size:11.5px;
+    color:var(--ink-dim);
+    line-height:1.7;
+}
+
+  footer{border-top:1px solid var(--line); padding:28px 0; margin-top:20px; font-family:'JetBrains Mono', monospace; font-size:11.5px; color:var(--ink-dim);}
+
+  @media (max-width:640px){
+    h1{font-size:30px;}
+    .pros-cons{grid-template-columns:1fr;}
+    .verdict-plate{flex-direction:column; align-items:flex-start;}
+    .torque-row{grid-template-columns:100px 1fr 60px;}
+}
+</style>
+  </head>
+  <body>
+
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="logo">Pick<span>Voltex</span></a>
+      <a href="index.html" class="back-link">← Todos os reviews</a>
+    </div>
+  </header>
+
+  <div class="wrap">
+    <div class="article-header">
+      <div class="kicker">Review técnico // Parafusadeira de impacto</div>
+    <h1>DEWALT DCF850 ATOMIC: a parafusadeira compacta compensa pro eletricista?</h1>
+    <p class="subtitle">Análise da ficha técnica e do encaixe real dessa ferramenta na rotina de instalação elétrica — painel apertado, trabalho suspenso e turno de 8+ horas com ela na mão.</p>
+    </div>
+
+    <div class="verdict-plate">
+      <div class="verdict-score">8.5<span style="font-size:16px;">/10</span></div>
+      <div class="verdict-text">
+        <strong>Veredito rápido:</strong> a melhor opção da linha DEWALT 20V MAX pra quem passa o dia trabalhando em quadro de distribuição, forro ou espaço apertado — o tamanho compacto pesa mais na decisão do que os 1.825 in-lb de torque, que já é mais do que suficiente pra 95% do trabalho elétrico do dia a dia.
+      </div>
+  </div>
+
+  <p class="lead">Se você já ficou com o braço tremendo depois de horas segurando uma parafusadeira acima da cabeça pra fixar eletroduto, sabe que o peso e o comprimento da ferramenta importam tanto quanto o torque. É exatamente aí que o DCF850 ATOMIC tenta se diferenciar dentro da própria linha da DEWALT.</p>
+
+    <h2>Ficha técnica</h2>
+  <table class="spec-table">
+    <tr><td>Torque máximo</td><td>1.825 in-lb</td></tr>
+    <tr><td>Velocidade</td><td>até 3.250 RPM</td></tr>
+      <tr><td>Modos de velocidade</td><td>3 (gatilho variável)</td></tr>
+    <tr><td>Comprimento</td><td>menos de 10 cm (compacto)</td></tr>
+      <tr><td>Motor</td><td>Brushless (sem escova)</td></tr>
+      <tr><td>Iluminação</td><td>3 LEDs integrados</td></tr>
+      <tr><td>Plataforma de bateria</td><td>DEWALT 20V MAX</td></tr>
+    <tr><td>Encaixe</td><td>1/4" sextavado</td></tr>
+    </table>
+
+    <h2>Onde essa ferramenta realmente entrega</h2>
+  <p><strong>Tamanho é a proposta central, não detalhe secundário.</strong> Com menos de 10 cm de comprimento, o DCF850 acessa espaços que uma parafusadeira comum não entra — dentro de quadro de distribuição lotado, atrás de tubulação já instalada, entre vigas de forro. Pra quem trabalha em reforma ou retrofit elétrico (onde o espaço já está tomado por outras instalações), isso pesa mais no dia a dia do que qualquer diferença de torque entre modelos.</p>
+    <p>O torque de 1.825 in-lb cobre confortavelmente parafuso de fixação de eletroduto, caixa de passagem, suporte de calha e a grande maioria dos parafusos autobrocantes usados em instalação elétrica e painéis. Não é a ferramenta pra fixação estrutural pesada (viga, ancoragem em concreto com parafuso grosso) — pra isso, a própria DEWALT tem opções com torque maior, mas que também pesam e ocupam mais espaço na mão.</p>
+  <p>O motor brushless (sem escova) significa menos desgaste mecânico ao longo dos anos e mais autonomia de bateria por carga — relevante pra quem usa a ferramenta o turno inteiro, todo dia, não só em projeto ocasional.</p>
+
+  <h2>Onde comparar com o resto da linha</h2>
+  <p>Vale contextualizar contra outras opções populares da própria DEWALT e da concorrência direta, olhando só pra especificação técnica publicada:</p>
+
+  <div class="torque-bar-wrap">
+    <div class="torque-row highlight">
+      <span class="model">DCF850 ATOMIC</span>
+      <div class="torque-track"><div class="torque-fill" style="width:73%"></div></div>
+        <span class="val">1.825 in-lb</span>
+      </div>
+      <div class="torque-row">
+        <span class="model">DCF787 (padrão)</span>
+        <div class="torque-track"><div class="torque-fill" style="width:64%; background:#5a6169;"></div></div>
+        <span class="val">1.600 in-lb</span>
+      </div>
+      <div class="torque-row">
+        <span class="model">Milwaukee M18 2853-20</span>
+        <div class="torque-track"><div class="torque-fill" style="width:100%; background:#5a6169;"></div></div>
+        <span class="val">2.500 in-lb</span>
+      </div>
+    </div>
+
+    <p>O Milwaukee M18 2853-20 entrega mais torque bruto, mas é a ferramenta certa pra fixação estrutural pesada — framing, conector estrutural, parafuso longo em madeira — não pro uso típico de instalação elétrica. Pagar mais torque do que você precisa geralmente significa carregar mais peso na mão o dia inteiro sem ganho real. O DCF787 é a opção "meio-termo" da própria DEWALT, mais equilibrada em tamanho, mas sem o diferencial de compacidade do ATOMIC.</p>
+    <p><strong>Ponto prático de decisão:</strong> se você já tem baterias 20V MAX da DEWALT (de furadeira, serra, outra ferramenta), o DCF850 entra no seu kit sem custo extra de bateria — compre a versão "bare tool" (só a ferramenta). Se está começando do zero, o kit com bateria e carregador sai proporcionalmente melhor.</p>
+
+    <div class="pros-cons">
+      <div class="pc-box pros">
+        <h3>Prós</h3>
+        <ul>
+          <li>Tamanho compacto — acessa espaço apertado que ferramenta padrão não entra</li>
+        <li>Torque mais que suficiente pra instalação elétrica no dia a dia</li>
+        <li>Motor brushless — mais durabilidade e autonomia</li>
+          <li>3 LEDs integrados ajudam em quadro/forro mal iluminado</li>
+        <li>Compatível com toda a linha de baterias 20V MAX da DEWALT</li>
+      </ul>
+    </div>
+    <div class="pc-box cons">
+      <h3>Contras</h3>
+      <ul>
+        <li>Torque insuficiente pra fixação estrutural pesada</li>
+          <li>Preço da versão kit sobe se você já tem bateria (compre a bare tool)</li>
+        <li>Só compensa a troca se peso/tamanho for sua dor real — quem já tem um impacto padrão que atende, não há motivo técnico forte pra trocar</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2>Vale a pena comprar?</h2>
+  <p>Se seu trabalho envolve espaço apertado com frequência — quadro de distribuição cheio, retrofit, forro baixo, trabalho suspenso prolongado — o DCF850 ATOMIC resolve um problema real que ferramenta de tamanho padrão não resolve. Se seu uso é mais generalista e você não sente falta de compacidade, um modelo padrão da própria DEWALT como o DCF787 entrega torque similar por preço geralmente menor.</p>
+
+  <div class="cta-box">
+    <h3>Onde comprar</h3>
+    <p>Preços e disponibilidade mudam direto na Amazon — confira o valor atual antes de decidir.</p>
+    <a class="cta-btn" href="https://www.amazon.com/dp/B0CCPS79PK?tag=pickvoltex-20-PENDENTE">Ver ferramenta avulsa (bare tool)</a>
+      <a class="cta-btn secondary" href="https://www.amazon.com/dp/B09MLLK9W5?tag=pickvoltex-20-PENDENTE">Ver kit com bateria e carregador</a>
+            </div>
+
+            <p class="disclosure">Como associado da Amazon, a PickVoltex recebe comissão sobre compras qualificadas feitas através dos links desta página, sem custo adicional para o comprador. Esta análise foi elaborada com base em especificações técnicas publicadas pelo fabricante e por fontes especializadas independentes, combinadas com a experiência prática do autor na área elétrica e industrial.</p>
+
+  <div class="disclosure">
+    NOTA INTERNA — REMOVER ANTES DE PUBLICAR: tag de afiliado ainda como placeholder (pickvoltex-20-PENDENTE), atualizar assim que a reinscrição no Amazon Associates for aprovada.
+            </div>
+          </div>
+
+          <footer>
+            <div class="wrap">
+              <p>© PickVoltex</p>
+            </div>
+          </footer>
+
+          </body>
+          </html>
+          
+  
