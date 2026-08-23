@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+  <html lang="pt-BR">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PickVoltex — Ferramentas testadas por quem trabalha em campo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#16181b;
+    --bg-panel:#1e2126;
+    --bg-panel-2:#25292f;
+    --ink:#f1ede4;
+          --ink-dim:#98a0a6;
+    --accent:#f2a922;
+          --accent-2:#e8542f;
+          --line:#33383e;
+    --good:#4f9d6e;
+    --radius:2px;
+}
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{
+        background:var(--bg);
+    color:var(--ink);
+    font-family:'Inter',system-ui,sans-serif;
+    line-height:1.55;
+}
+  a{color:inherit;}
+  .wrap{max-width:960px; margin:0 auto; padding:0 24px;}
+
+  /* Header / nameplate strip */
+  header{
+        border-bottom:3px solid var(--accent);
+    background:
+          repeating-linear-gradient(135deg, transparent, transparent 14px, rgba(242,169,34,0.06) 14px, rgba(242,169,34,0.06) 28px),
+            var(--bg-panel);
+}
+  .header-inner{
+        max-width:960px; margin:0 auto; padding:22px 24px;
+    display:flex; align-items:center; justify-content:space-between;
+}
+  .logo{
+        font-family:'Barlow Condensed', sans-serif;
+    font-weight:800;
+    font-size:28px;
+    letter-spacing:0.5px;
+    text-transform:uppercase;
+}
+  .logo span{color:var(--accent);}
+  .tagline{
+        font-family:'JetBrains Mono', monospace;
+    font-size:12px;
+    color:var(--ink-dim);
+    letter-spacing:0.5px;
+}
+
+  /* Hero */
+  .hero{padding:64px 0 48px; border-bottom:1px solid var(--line);}
+  .hero-eyebrow{
+        font-family:'JetBrains Mono', monospace;
+    font-size:12px;
+    color:var(--accent);
+    text-transform:uppercase;
+    letter-spacing:1.5px;
+    margin-bottom:14px;
+}
+  .hero h1{
+        font-family:'Barlow Condensed', sans-serif;
+    font-weight:800;
+    font-size:52px;
+    line-height:1.03;
+    letter-spacing:0.2px;
+    max-width:680px;
+    text-transform:uppercase;
+}
+  .hero p{
+        margin-top:20px;
+    max-width:560px;
+    color:var(--ink-dim);
+    font-size:17px;
+}
+  .hero-credential{
+        margin-top:28px;
+    display:flex;
+    gap:14px;
+    align-items:center;
+    font-family:'JetBrains Mono', monospace;
+    font-size:12.5px;
+    color:var(--ink-dim);
+}
+  .badge-dot{width:8px; height:8px; background:var(--good); border-radius:50%; flex:none;}
+
+  /* Article list */
+  .section-label{
+        font-family:'JetBrains Mono', monospace;
+    font-size:12px;
+    color:var(--ink-dim);
+    text-transform:uppercase;
+    letter-spacing:1.5px;
+    padding-top:48px;
+    padding-bottom:20px;
+    border-top:1px solid var(--line);
+    margin-top:0;
+}
+  .article-list{list-style:none; padding-bottom:60px;}
+  .article-card{
+        display:grid;
+    grid-template-columns:120px 1fr auto;
+    gap:22px;
+    align-items:center;
+    padding:22px 20px;
+    background:var(--bg-panel);
+    border:1px solid var(--line);
+    border-left:3px solid var(--accent);
+    margin-bottom:14px;
+    text-decoration:none;
+    transition:border-color .15s ease, transform .15s ease;
+}
+  .article-card:hover{border-left-color:var(--accent-2); transform:translateX(2px);}
+  .article-tag{
+        font-family:'JetBrains Mono', monospace;
+    font-size:11px;
+    color:var(--bg);
+    background:var(--accent);
+    padding:5px 8px;
+    text-align:center;
+    text-transform:uppercase;
+    letter-spacing:0.5px;
+    font-weight:600;
+}
+  .article-card h2{
+        font-family:'Barlow Condensed', sans-serif;
+    font-weight:700;
+    font-size:22px;
+    color:var(--ink);
+    text-transform:uppercase;
+    letter-spacing:0.2px;
+}
+  .article-card p{color:var(--ink-dim); font-size:14px; margin-top:4px;}
+  .article-arrow{font-family:'JetBrains Mono', monospace; color:var(--ink-dim); font-size:20px;}
+
+  .article-card.placeholder{opacity:0.45; cursor:default; pointer-events:none;}
+
+  footer{
+        border-top:1px solid var(--line);
+    padding:28px 0;
+    font-family:'JetBrains Mono', monospace;
+    font-size:11.5px;
+    color:var(--ink-dim);
+}
+  footer p{margin-bottom:6px;}
+
+  @media (max-width:640px){
+    .hero h1{font-size:38px;}
+    .article-card{grid-template-columns:1fr; text-align:left;}
+    .article-arrow{display:none;}
+      }
+</style>
+      </head>
+      <body>
+
+      <header>
+        <div class="header-inner">
+          <div class="logo">Pick<span>Voltex</span></div>
+          <div class="tagline">CAMPO // ELÉTRICA // FERRAMENTA</div>
+        </div>
+      </header>
+
+      <div class="wrap">
+        <section class="hero">
+          <div class="hero-eyebrow">Reviews técnicos — não patrocinados</div>
+          <h1>Ferramenta boa é a que sobrevive ao seu terceiro turno</h1>
+    <p>Análises de ferramentas elétricas e industriais escritas com base em especificação técnica real e experiência de campo — sem enrolação, sem elogio genérico. Se não vale o dinheiro, a gente fala.</p>
+    <div class="hero-credential">
+      <span class="badge-dot"></span>
+      Escrito por quem passou pelo canteiro, não só pela redação
+    </div>
+        </section>
+
+        <p class="section-label">Reviews recentes</p>
+        <ul class="article-list">
+          <li>
+            <a class="article-card" href="review-dcf850-atomic.html">
+              <span class="article-tag">Parafusadeira</span>
+              <div>
+                <h2>DEWALT DCF850 ATOMIC — vale trocar de ferramenta?</h2>
+                <p>Torque, tamanho e onde essa parafusadeira de impacto realmente compensa no dia a dia elétrico.</p>
+        </div>
+        <span class="article-arrow">→</span>
+      </a>
+          </li>
+          <li>
+            <a class="article-card placeholder" href="#">
+              <span class="article-tag">Multímetro</span>
+              <div>
+                <h2>Em produção</h2>
+          <p>Próximo review chegando em breve.</p>
+              </div>
+              <span class="article-arrow">→</span>
+            </a>
+          </li>
+          <li>
+            <a class="article-card placeholder" href="#">
+              <span class="article-tag">EPI</span>
+              <div>
+                <h2>Em produção</h2>
+          <p>Próximo review chegando em breve.</p>
+              </div>
+              <span class="article-arrow">→</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <footer>
+        <div class="wrap">
+          <p>PickVoltex participa do Programa de Associados da Amazon, um programa de publicidade de afiliados projetado para gerar uma forma de remuneração através da divulgação e do link para a Amazon.</p>
+          <p>© PickVoltex</p>
+        </div>
+      </footer>
+
+      </body>
+      </html>
+      
